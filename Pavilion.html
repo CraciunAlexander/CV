@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Conversie CET Grozavesti</title>
+  	<link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="lightbox.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+
+    <div class="headr">
+      <div class="container">
+    		<nav>
+
+    			<ul>
+            <li><a href="index.html">Home</a></li>
+    				<li><a href="index.html">Portofolio</a></li>
+          	<li><a href="Scripts.html">Scripts</a></li>
+            <li><a href="Sketches.html">Sketches</a></li>
+    				<li><a href="Paintings.html">Art</a></li>
+    				<li><a href="index.html">About</a></li>
+    				<li><a href="index.html">Contact</a></li>
+    			</ul>
+    		</nav>
+      </div>
+    </div>
+<div class="continer">
+  <div class="swiper">
+    <h1>Pavilion Festival "George Enescu"</h1>
+    <br>
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide"> <img src="pavilion_enescu/2.1.jpg" alt=""> </div>
+    <div class="swiper-slide"><img src="pavilion_enescu/2.2.jpg" alt=""></div>
+    <div class="swiper-slide"><img src="pavilion_enescu/2.3.jpg" alt=""></div>
+
+
+  </div>
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+</div>
+</div>
+<div class="descriere">
+  <p>The George Enescu Music Festival in Bucharest will feature a stunning temporary pavilion designed to impress. The pavilion boasts a modern parametric design, characterized by its signature curve-like shape. The structure is comprised of wooden prefabricated elements, allowing for quick and easy assembly and disassembly.
+
+The pavilion offers ample space for guests to relax and enjoy the festival experience. A stylish restaurant provides the perfect environment for dining and socializing, while a private room is available for the artists to prepare and unwind. The centerpiece of the pavilion is the stage, where musicians and performers will bring the festival to life with their electrifying performances.
+
+This innovative and eco-friendly design, combined with its central location in the heart of Bucharest, make the George Enescu Music Festival pavilion a must-see for festival-goers and architectural enthusiasts alike.</p>
+</div>
+<br>
+<div class="conteiner">
+  <div class="gallery">
+    <a href="pavilion_enescu/CRACIUN_S2_03.jpg" data-lightbox="project" data-title="Planuri 1-4">
+    <img src="pavilion_enescu/CRACIUN_S2_03.jpg" alt="">
+    </a>
+    <a href="pavilion_enescu/CRACIUN_S2_09.jpg" data-lightbox="project" data-title="Planuri 2-5">
+    <img src="pavilion_enescu/CRACIUN_S2_09.jpg" alt="">
+    </a>
+    <a href="pavilion_enescu/CRACIUN_S2_10.jpg" data-lightbox="project" data-title="Planuri 2-5">
+    <img src="pavilion_enescu/CRACIUN_S2_10.jpg" alt="">
+    </a>
+
+        <a href="pavilion_enescu/CRACIUN_S2_01.jpg" data-lightbox="project" data-title="Masterplan">
+          <img src="pavilion_enescu/CRACIUN_S2_01.jpg" alt="">
+          </a>
+        <a href="pavilion_enescu/CRACIUN_S2_02.jpg" data-lightbox="project" data-title="Plan de situatie">
+        <img src="pavilion_enescu/CRACIUN_S2_02.jpg" alt="">
+        </a>
+
+        <a href="pavilion_enescu/CRACIUN_S2_05.jpg" data-lightbox="project" data-title="Planuri 2-5">
+        <img src="pavilion_enescu/CRACIUN_S2_05.jpg" alt="">
+        </a>
+      </div>
+    </div>
+
+<script src="lightbox-plus-jquery.js"> </script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script>
+const swiper = new Swiper('.swiper', {
+  autoplay:{
+    delay: 3000,
+    disableOnInteraction:false,
+  },
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable:true,
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+
+});
+</script>
+<script>
+  window.onscroll = function() {
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+      document.querySelector("nav").style.backgroundColor = "black";
+    } else {
+      document.querySelector("nav").style.backgroundColor = "transparent";
+    }
+  };
+</script>
+  </body>
+</html>
