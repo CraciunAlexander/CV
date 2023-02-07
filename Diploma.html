@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Conversie CET Grozavesti</title>
+  	<link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="lightbox.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+
+    <div class="headr">
+      <div class="container">
+    		<nav>
+    			<ul>
+            <li><a href="index.html">Home</a></li>
+    				<li><a href="index.html">Portofolio</a></li>
+          	<li><a href="Scripts.html">Scripts</a></li>
+            <li><a href="Sketches.html">Sketches</a></li>
+    				<li><a href="Paintings.html">Art</a></li>
+    				<li><a href="index.html">About</a></li>
+    				<li><a href="index.html">Contact</a></li>
+    			</ul>
+    		</nav>
+      </div>
+    </div>
+<br>
+<div class="continer">
+  <div class="swiper">
+    <h1>Auditoriu pe Calea Victoriei</h1>
+    <br>
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide"> <img src="diploma/5.1.jpg" alt=""> </div>
+    <div class="swiper-slide"><img src="diploma/5.2.jpg" alt=""></div>
+    <div class="swiper-slide"><img src="diploma/5.3.jpg" alt=""></div>
+    <div class="swiper-slide"><img src="diploma/5.4.jpg" alt=""></div>
+    <div class="swiper-slide"><img src="diploma/5.6.jpg" alt=""></div>
+    <div class="swiper-slide"><img src="diploma/5.7.jpg" alt=""></div>
+    <div class="swiper-slide"><img src="diploma/5.8.jpg" alt=""></div>
+    <div class="swiper-slide"><img src="diploma/5.9.jpg" alt=""></div>
+    <div class="swiper-slide"><img src="diploma/5.10.jpg" alt=""></div>
+    <div class="swiper-slide"><img src="diploma/5.11.jpg" alt=""></div>
+    <div class="swiper-slide"><img src="diploma/5.12.jpg" alt=""></div>
+
+  </div>
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+</div>
+</div>
+
+    <div class="descriere">
+      <p> The proposed project in the center of Bucharest is an auditorium surrounded by a flexible space dedicated to the arts. The design of the auditorium is carefully crafted to cater to a variety of auditive activities, including music, theater, and meetings. The auditorium features an inclination that takes into account the varying heights of the surrounding buildings, providing an optimal experience for its users.
+
+The subplants of the auditorium are shaped in a curve and offer multiple levels, allowing for easy circulation throughout the building. The back facade of the auditorium is designed with a degree of inclination and small openings of varying sizes, which not only provide protection from direct sunlight but also create an aesthetically pleasing facade. The inclined facade also serves to avoid direct sunlight on the art displayed on the outer walls of the auditorium, while still allowing ample light to enter the inner space.
+
+In conclusion, the proposed auditorium project in Bucharest offers a unique and innovative design, thoughtfully crafted to cater to the diverse needs of the community. Its flexible art space, versatile auditorium shape, and carefully considered circulation and lighting elements make it an attractive cultural hub that is well suited to the city's needs.</p>
+    </div>
+<br>
+
+    <div class="conteiner">
+      <div class="gallery">
+        <a href="diploma/Plansa 1.jpg" data-lightbox="project" data-title="Masterplan">
+          <img src="diploma/Plansa 1.jpg" alt="">
+          </a>
+        <a href="diploma/Plansa 2.jpg" data-lightbox="project" data-title="Plan de situatie">
+        <img src="diploma/Plansa 2.jpg" alt="">
+        </a>
+        <a href="diploma/axonometrie+concept+schite.jpg" data-lightbox="project" data-title="Planuri 1-4">
+        <img src="diploma/axonometrie+concept+schite.jpg" alt="">
+        </a>
+        <a href="diploma/Plan de situatie A0.jpg" data-lightbox="project" data-title="Planuri 2-5">
+        <img src="diploma/Plan de situatie A0.jpg" alt="">
+        </a>
+        <a href="diploma/Plan Parter A0.jpg" data-lightbox="project" data-title="Planuri 2-5">
+        <img src="diploma/Plan Parter A0.jpg" alt="">
+        </a>
+        <a href="diploma/Planuri subsol A0.jpg" data-lightbox="project" data-title="Planuri 2-5">
+        <img src="diploma/Planuri subsol A0.jpg" alt="">
+        </a>
+  
+        <a href="diploma/Plan etaj 23.jpg" data-lightbox="project" data-title="Planuri 2-5">
+        <img src="diploma/Plan etaj 23.jpg" alt="">
+        </a>
+        <a href="diploma/FATADE 1 A0.jpg" data-lightbox="project" data-title="Planuri 2-5">
+        <img src="diploma/FATADE 1 A0.jpg" alt="">
+        </a>
+        <a href="diploma/SECTIUNI A0.jpg" data-lightbox="project" data-title="Planuri 2-5">
+        <img src="diploma/SECTIUNI A0.jpg" alt="">
+        </a>
+
+
+
+      </div>
+
+    </div>
+<script src="lightbox-plus-jquery.js"> </script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script>
+const swiper = new Swiper('.swiper', {
+  autoplay:{
+    delay: 3000,
+    disableOnInteraction:false,
+  },
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable:true,
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+
+});
+</script>
+<script>
+  window.onscroll = function() {
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+      document.querySelector("nav").style.backgroundColor = "black";
+    } else {
+      document.querySelector("nav").style.backgroundColor = "transparent";
+    }
+  };
+</script>
+  </body>
+</html>

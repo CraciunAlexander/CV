@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Resume/CV Design</title>
+	<link rel="stylesheet" href="styles.css">
+	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+</head>
+
+
+<body>
+
+
+
+<div id="header">
+	<nav>
+		<ul>
+			<li><a href="#header">Home</a></li>
+			<li><a href="#portofolio">Portofolio</a></li>
+			<li><a href="#Scripts">Scripts</a></li>
+			<li><a href="#sketches">Sketches</a></li>
+			<li><a href="#paintings">Art</a></li>
+			<li><a href="#about">About</a></li>
+			<li><a href="#contact">Contact</a></li>
+		</ul>
+	</nav>
+	<video autoplay loop muted plays-inline class="back-video">
+		<source src="videos/ANTOHE_CRACIUN_L1_F2_24.mp4" type="video/mp4">
+
+	</video>
+
+	<div id="typing-text"></div>
+	<script>
+	const text = "Sketch, automate, paint - designing a lasting impact.";
+		 let i = 0;
+
+		 function typeText() {
+			 if (i <= text.length) {
+				 document.getElementById("typing-text").innerHTML = text.substring(0, i) + "|";
+				 i++;
+				 setTimeout(typeText, 50);
+			 } else {
+				 setTimeout(function() {
+					 document.getElementById("typing-text").style.display = "none";
+				 }, 4000);
+			 }
+		 }
+
+		 function eraseText() {
+			 if (i > 0) {
+				 document.getElementById("typing-text").innerHTML = text.substring(0, i - 1) + "|";
+				 i--;
+				 setTimeout(eraseText, 50);
+			 } else {
+				 setTimeout(typeText, 500);
+			 }
+		 }
+
+		 typeText();
+		 setInterval(eraseText,4000);
+	</script>
+
+  <div class="container">
+
+
+  </div>
+</div>
+
+<!--ABOUT------------------>
+<div id="about">
+	<div class="container">
+			<div class="row">
+				<div class="about-col-1">
+						<img src="images/user1.jpg" alt="">
+				</div>
+
+				<div class="about-col-2">
+					<h1 class="sub-title">About Me</h1>
+					<br>
+					<p>Recently graduated with a Masters degree in Architecture, I am a passionate and focused individual with a strong background
+						in Fine Arts and problem-solving skills. Proficient in Archicad, Rhino, and Grasshopper, I am eager to apply my knowledge and
+						 abilities in a challenging role where I can make a positive impact on the company.</p>
+						 <div class="tab-titles">
+							 <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+							 <p class="tab-links" onclick="opentab('education')">Education</p>
+							 <p class="tab-links" onclick="opentab('work')">Work Experience</p>
+							 	<p class="tab-links" onclick="opentab('languages')">Languages</p>
+						 </div>
+
+						 <div class="tab-contents" id="education">
+							 <ul>
+								<li><span>2004-2011</span><br> Liceul Teoretic "Hyperion"</li>
+								<li><span>2007-2011</span><br> Scoala de Arte "A.Sciusev"</li>
+								<li><span>2011-2016</span><br> Liceul Academic de Arte Plastice "Igor Vieru"</li>
+								<li><span>2016-2022</span><br> Universitatea de Arhitectura si Urbanism "Ion Mincu"</li>
+							 </ul>
+						 </div>
+						 <div class="tab-contents" id="work">
+							 <ul>
+								<li><span>August 2021-December 2021</span><br> BAIRR Architecture</li>
+								<li><span>December 2022-January 2023</span><br> Arhiterra </li>
+							 </ul>
+						 </div>
+
+						 <div class="tab-contents" id="languages">
+							 <ul>
+								<li><span>Romanian</span><br> Native Speaker </li>
+								<li><span>Russian</span><br> Native Speaker</li>
+								<li><span>English</span><br> Fluent</li>
+								<li><span>German</span><br> Beginner</li>
+								<li><span>French</span><br> Beginner</li>
+							 </ul>
+						 </div>
+											 <div class="tab-contents active-tab" id="skills">
+							 <ul>
+							 	<li> <span>ArchiCAD</span> </li>
+								<li> <span>Rhino</span> </li>
+								<li> <span>Grasshopper</span> </li>
+								<li> <span>Photoshop</span> </li>
+							 </ul>
+						 </div>
+					</div>
+
+			</div>
+		</div>
+</div>
+<!---Portofolio------------>
+
+<div id="portofolio">
+	<div class="container">
+		<h1 class="sub-title"> Portfolio </h1>
+			<div class="work-list">
+				<div class="work">
+					<video autoplay loop muted plays-inline class="back-video">
+						<source src="videos/casa_radio.mp4" type="video/mp4">
+					</video>
+						<div class="layer">
+							<h3>Conversie "Casa Radio"</h3>
+							<a href="Conversie_Casa_Radio.html"><i class="fas fa-external-link-alt"></i></a>
+						</div>
+				</div>
+
+				<div class="work">
+	<img src="videos/cet.gif" >
+						<div class="layer">
+							<h3>Conversie CET "Grozavesti"</h3>
+							<a href="Conversie_CET_Grozavesti.html"><i class="fas fa-external-link-alt"></i></a>
+						</div>
+				</div>
+
+				<div class="work">
+					<video autoplay loop muted plays-inline class="back-video">
+						<source src="videos/diploma.mp4" type="video/mp4">
+					</video>
+						<div class="layer">
+							<h3>Auditoriu pe Calea Victoriei</h3>
+							<a href="Diploma.html"><i class="fas fa-external-link-alt"></i></a>
+						</div>
+				</div>
+
+
+				<div class="work">
+						<img src="videos/seul.gif" >
+						<div class="layer">
+							<h3>Centru cultural in Seoul</h3>
+							<a href="Seoul.html"><i class="fas fa-external-link-alt"></i></a>
+						</div>
+				</div>
+
+				<div class="work">
+					<video autoplay loop muted plays-inline class="back-video">
+						<source src="videos/ANTOHE_CRACIUN_L1_F2_24.mp4" type="video/mp4">
+
+					</video>
+						<div class="layer">
+							<h3>Filarmonica pe Calea Victoriei"</h3>
+							<a href="Filarmonica_Calea_Victoriei.html"><i class="fas fa-external-link-alt"></i></a>
+						</div>
+				</div>
+
+				<div class="work">
+						<img src="videos/pavilion.gif" >
+						<div class="layer">
+							<h3>Pavilion Festival "George Enescu"</h3>
+							<a href="Pavilion.html"><i class="fas fa-external-link-alt"></i></a>
+						</div>
+				</div>
+
+
+		 </div>
+  </div>
+</div>
+
+<br>
+<br>
+
+<div id="Scripts">
+	<div class="container">
+		<h1 class="sub-title"> Scripts </h1>
+			<div class="sketch-list">
+
+				<div class="sketch">
+						<img src="videos/gh2.gif" >
+						<div class="layer">
+
+							<a href="Scripts.html"><i class="fas fa-external-link-alt"></i></a>
+						</div>
+				</div>
+
+				<div class="sketch">
+						<img src="videos/gh5.gif" >
+						<div class="layer">
+							<a href="Scripts.html"><i class="fas fa-external-link-alt"></i></a>
+						</div>
+				</div>
+				<div class="sketch">
+						<img src="videos/gh_gif.gif" >
+						<div class="layer">
+							<a href="Scripts.html"><i class="fas fa-external-link-alt"></i></a>
+						</div>
+				</div>
+		 </div>
+  </div>
+</div>
+
+<br>
+<br>
+
+<div id="sketches">
+	<div class="container">
+		<h1 class="sub-title"> Sketches </h1>
+			<div class="work-list">
+				<div class="work">
+					  <img src="videos/sk0.gif" >
+						<div class="layer">
+
+							<a href="Sketches.html"><i class="fas fa-external-link-alt"></i></a>
+						</div>
+				</div>
+				<div class="work">
+						<img src="videos/sk2.gif" >
+						<div class="layer">
+
+							<a href="Sketches.html"><i class="fas fa-external-link-alt"></i></a>
+						</div>
+				</div>
+				<div class="work">
+						<img src="videos/sk3.gif" >
+						<div class="layer">
+
+							<a href="Sketches.html"><i class="fas fa-external-link-alt"></i></a>
+						</div>
+				</div>
+
+		 </div>
+  </div>
+</div>
+
+
+<br>
+<br>
+<!---gallery------>
+
+<div id="paintings">
+	<div class="container">
+		<h1 class="sub-title"> Gallery </h1>
+			<div class="work-list">
+				<div class="work">
+					<video autoplay loop muted plays-inline class="back-video">
+						<source src="videos/p1.mp4" type="video/mp4">
+					</video>
+						<div class="layer">
+
+							<a href="Paintings.html"><i class="fas fa-external-link-alt"></i></a>
+						</div>
+				</div>
+				<div class="work">
+						<img src="videos/p3.gif" >
+						<div class="layer">
+
+							<a href="Paintings.html"><i class="fas fa-external-link-alt"></i></a>
+						</div>
+				</div>
+				<div class="work">
+						<img src="paintings/3.jpeg" >
+						<div class="layer">
+
+							<a href="Paintings.html"><i class="fas fa-external-link-alt"></i></a>
+						</div>
+				</div>
+
+		 </div>
+  </div>
+</div>
+<br>
+<br>
+<!--contact------->
+<div id="contact">
+	<div class="container">
+		<div class="row">
+			<div class="contact-left">
+        <h1 class="sub-title">Contact Me</h1>
+				<p><i class="fas fa-paper-plane"></i>AlexCraciun32@gmail.com</p>
+				<p><i class="fas fa-phone-square-alt"></i>+373 692 316 56</p>
+				<div class="social-icons">
+					<a href="https://www.facebook.com/profile.php?id=100013164333597"><i class="fab fa-facebook"></i></a>
+					<a href="https://www.instagram.com/i_am_sasha1410/"><i class="fab fa-instagram"></i></a>
+					<a href="#"><i class="fab fa-google"></i></a>
+				</div>
+				<a href="images/" download class="btn btn2">Download CV</a>
+				</div>
+			<div class="contact-right">
+				  <form>
+					   <input type="text" name ="Name" placeholder="Your Name" required>
+					  <input type="email" name ="email" placeholder="Your Email" required>
+					  <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+					<button type="submit" class="btn btn2">Submit</button>
+				  </form>
+				</div>
+		</div>
+	</div>
+	<div class="copyright">
+		<p>Copyright © Alexandru Crăciun. 2022</p>
+	</div>
+</div>
+
+
+<script type="text/javascript">
+	var tablinks = document.getElementsByClassName("tab-links");
+	var tabcontents = document.getElementsByClassName("tab-contents");
+	function opentab(tabname) {
+		for(tablink of tablinks){
+			tablink.classList.remove("active-link");
+		}
+		for(tabcontent of tabcontents){
+			tabcontent.classList.remove("active-tab");
+		}
+		event.currentTarget.classList.add("active-link");
+		document.getElementById(tabname).classList.add("active-tab")
+	}
+</script>
+<script>
+  window.onscroll = function() {
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+      document.querySelector("nav").style.backgroundColor = "black";
+    } else {
+      document.querySelector("nav").style.backgroundColor = "transparent";
+    }
+  };
+</script>
+</body>
+</html>
