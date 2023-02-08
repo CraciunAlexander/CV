@@ -14,7 +14,7 @@
 
 
 <div id="header">
-	<nav>
+	<nav class="landing">
 		<ul>
 			<li><a href="#header">Home</a></li>
 			<li><a href="#portofolio">Portofolio</a></li>
@@ -25,6 +25,9 @@
 			<li><a href="#contact">Contact</a></li>
 		</ul>
 	</nav>
+
+
+
 	<div class="back-video">
 
 
@@ -293,7 +296,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="contact-left">
-        <h1 class="sub-title">Contact Me</h1>
+        <h1 class="sub-title">Contact</h1>
 				<p><i class="fas fa-paper-plane"></i>AlexCraciun32@gmail.com</p>
 				<p><i class="fas fa-phone-square-alt"></i>+373 692 316 56</p>
 				<div class="social-icons">
@@ -341,6 +344,15 @@
       document.querySelector("nav").style.backgroundColor = "transparent";
     }
   };
+</script>
+<script>
+window.onscroll = function() {
+	if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+		document.querySelector("nav").classList.add("scrolled");
+	} else {
+		document.querySelector("nav").classList.remove("scrolled");
+	}
+};
 </script>
 </body>
 </html>
