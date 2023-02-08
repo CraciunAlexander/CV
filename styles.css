@@ -192,9 +192,71 @@ video {
 padding: 10px 10%;
 
 }
+/**********************************************/
+.landing {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: transparent;
+  z-index: 10;
+  width: 100%;
+padding: 10px;
+color: black;
+ transition: all 0.3s ease;
 
+}
 
+.landing ul {
+  display: flex;
+  justify-content: center;
+}
 
+.landing li {
+  margin-left: 10px;
+}
+.logo{
+  width: 140px;
+
+}
+
+.landing ul li{
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+
+.landing ul li a{
+
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.landing ul li a::after{
+
+  content: '';
+  width: 0;
+  height: 3px;
+  background: #ff004f;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+.landing ul li a:hover::after{
+  width: 100%
+
+}
+
+.landing.scrolled {
+  background-color: black;
+}
+.landing.scrolled ul li a {
+  color: white;
+}
+/*********************************************/
 nav {
   position: fixed;
   top: 0;
@@ -203,13 +265,14 @@ nav {
   z-index: 10;
   width: 100%;
 padding: 10px;
-
+color: white;
+ transition: all 0.3s ease;
 
 }
 
 nav ul {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 nav li {
@@ -228,10 +291,11 @@ nav ul li{
 
 nav ul li a{
 
-  color: #fff;
+  color: white;
   text-decoration: none;
   font-size: 18px;
   position: relative;
+  transition: all 0.3s ease;
 }
 
 nav ul li a::after{
@@ -250,6 +314,12 @@ nav ul li a:hover::after{
 
 }
 
+nav.scrolled {
+  background-color: black;
+}
+nav.scrolled ul li a {
+  color: white;
+}
 .continer{
   width: 100%;
   height: 100vh;
@@ -541,7 +611,7 @@ color: #ff004f;
 
 .btn.btn2{
   display: inline-block;
-  color: #ff004f;
+  color: #fffff;
 }
 
 contact-right form{
