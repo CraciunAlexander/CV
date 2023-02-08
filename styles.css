@@ -29,19 +29,54 @@ color: #fff;
   font-family: "Montserrat", sans-serif;
 }
 
-#header {
-width: 100%;
-height:100vh;
-background-video: url(images/ANTOHE_CRACIUN_L1_F2_24.mp4);
-background-size: cover;
-background-position: center;
-}
+
 #headr{
 width: 100%;
 height:100vh;
 background-image: url(images/19_BALASOIU_CRACIUN_CRISAN_RANDARI EXTERIOR_19.jpg);
 background-size: cover;
 background-position: center;
+}
+
+#header {
+width: 100%;
+height:100vh;
+position: relative;
+}
+
+
+.back-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/*
+@media (min-aspect-ratio:16/89){
+  .back-video{
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-aspect-ratio:16/89){
+  .back-video{
+    width: auto;
+    height: 100%;
+  }
+}
+*/
+@media (max-width: 767px) {
+  #header {
+    height: 50vh;
+  }
 }
 
 .vidos{
@@ -354,25 +389,6 @@ color: #ff004f;
 
 .tab-contents.active-tab{
   display: block;
-}
-.back-video{
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  z-index: -1;
-}
-
-@media (min-aspect-ratio:16/89){
-  .back-video{
-    width: 100%;
-    height: auto;
-  }
-}
-@media (max-aspect-ratio:16/89){
-  .back-video{
-    width: auto;
-    height: 100%;
-  }
 }
 
 
