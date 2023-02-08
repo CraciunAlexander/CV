@@ -31,7 +31,7 @@ color: #fff;
 
 #header {
 width: 100%;
-height:100%;
+height:100vh;
 background-video: url(images/ANTOHE_CRACIUN_L1_F2_24.mp4);
 background-size: cover;
 background-position: center;
